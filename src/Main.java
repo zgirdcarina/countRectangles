@@ -35,7 +35,7 @@ public class Main {
     }
 
             public static void main(String[] args) {
-                //read the points from the file
+                //read the points from the file(don't forget to change de file path )
                 List<Point> points = readPointsFromFile("C:\\Users\\Carina\\countRegtangles\\src\\points.txt");
                 List<Point> points2 = readPointsFromFile("C:\\Users\\Carina\\countRegtangles\\src\\points2.txt");
                 //call the function
