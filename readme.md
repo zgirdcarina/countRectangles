@@ -1,4 +1,4 @@
-## Count Regtangles 
+## Count Rectangles 
 
 This is a simple program that counts the number of rectangles that can be created by some points in cartesian coordinate, (X, Y).
 
