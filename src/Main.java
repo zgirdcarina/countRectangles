@@ -19,8 +19,8 @@ public class Main {
             {
                 //get the second point
                 Point p2=points[j];
-                //check if the points are not on the same line
-                if(p1.x!=p2.x && p1.y!=p2.y)
+                //check if the points are not on the same line and we verify that the points don't form a square
+                if(p1.x!=p2.x && p1.y!=p2.y && p1.x-p2.x!=p1.y-p2.y)
                 {
                     //check if the points are in the set
                     if(pointSet.contains(new Point(p1.x,p2.y)) && pointSet.contains(new Point(p2.x,p1.y)))
@@ -36,8 +36,8 @@ public class Main {
 
             public static void main(String[] args) {
                 //read the points from the file
-                List<Point> points = readPointsFromFile("C:\\Users\\Carina\\countRegtangles\\src\\points.txt");
-                List<Point> points2 = readPointsFromFile("C:\\Users\\Carina\\countRegtangles\\src\\points2.txt");
+                List<Point> points = readPointsFromFile("C:\\Users\\Carina\\countRectangles\\src\\points.txt");
+                List<Point> points2 = readPointsFromFile("C:\\Users\\Carina\\countRectangles\\src\\points2.txt");
                 //call the function
                 int countRectangles = CountRectangles(points.toArray(new Point[points.size()]));
                 int countRectangles2 = CountRectangles(points2.toArray(new Point[points2.size()]));
